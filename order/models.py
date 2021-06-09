@@ -10,6 +10,9 @@ class Order(models.Model):
     quantity = models.IntegerField(verbose_name='QUANTITY')
     registered_date = models.DateTimeField(auto_now_add=True, verbose_name='Ordered_DATE')
 
+    def __str__(self):
+        return str(self.customer) + ' ' + str(self.product)
+
     class Meta:
         db_table = 'NewProject_order'
         verbose_name = 'Order'
