@@ -12,6 +12,6 @@ class Product(models.Model):
     registered_date = models.DateTimeField(auto_now_add=True, verbose_name='ProdREGISTERED_DATE')
 
     class Meta:
-        db_table = 'Shopping_PRODUCT'
+        db_table = 'NewProject_product'
         verbose_name = 'PRODUCT'
         verbose_name_plural = 'PRODUCT'
