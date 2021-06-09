@@ -11,6 +11,6 @@ class Order(models.Model):
     registered_date = models.DateTimeField(auto_now_add=True, verbose_name='Ordered_DATE')
 
     class Meta:
-        db_table = 'NewProject_Order'
+        db_table = 'NewProject_order'
         verbose_name = 'Order'
         verbose_name_plural = 'Order'

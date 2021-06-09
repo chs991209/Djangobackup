@@ -13,7 +13,7 @@ class Customer(models.Model):
                                            )
 
     class Meta:
-        db_table = 'Shopping_CUSTOMER'
+        db_table = 'NewProject_customer'
         verbose_name = 'CUSTOMER'
         verbose_name_plural = 'CUSTOMER'
 
