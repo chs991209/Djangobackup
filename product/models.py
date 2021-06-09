@@ -11,6 +11,9 @@ class Product(models.Model):
     stock = models.IntegerField(verbose_name='Prod_STOCK')
     registered_date = models.DateTimeField(auto_now_add=True, verbose_name='ProdREGISTERED_DATE')
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         db_table = 'NewProject_product'
         verbose_name = 'PRODUCT'
